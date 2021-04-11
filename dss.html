@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immunotherapy DSS</title>
+      <style>
+        body{
+          background-color:grey;
+        }
+
+        .box{
+          margin-top:10%;
+          /* margin-left: 10%; */
+          margin-right: 10%;
+          padding: 5em 0;
+          background-color: red;
+          width: 100%;
+        }
+
+        table,td,th{
+          border-collapse: collapse;
+          border:1px solid black;
+          margin-right: 10%;
+          margin-left: 10%;
+          border:1px solid black;
+          padding: 1em 10px;
+        }
+
+        h1,p{
+          padding: 0 1em;
+          margin-left:30%;
+          margin-right: 30%;
+          margin-top: 5em;
+        }
+
+        th{
+          border:1px solid black;
+          background-color: lightgrey;
+        }
+        .button{
+          margin-left:50%;
+          margin-right: 50%;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Insert your Immunotherapy dataset below:</h1>
+    <div class="box">
+      <form action="dss.php" method="post">
+        <table>
+          <tr>
+            <th>Sex</th><th>Age</th><th>Time</th><th>Number of Warts</th><th>Type</th>
+            <th>Area</th><th>Induration Diameter</th>
+          </tr>
+          <tr>
+            <td><input type="number" name="Sex" placeholder="1 = Male 2 = Female"></td><td><input type="number" name="Age" placeholder="Age"></td>
+            <td><input type="float" name="Time" placeholder="Time"></td><td><input type="number" name="Number_of_warts" placeholder="Number of Warts"></td>
+            <td><input type="number" name="Type" placeholder="Enter 1,2 Or 3"></td><td><input type="number" name="Area" placeholder="Area"></td>
+            <td><input type="number" name="induration_diameter" placeholder="Induration Diameter"></td>
+          </tr>
+        </table>
+        <input type="submit" name="submit" value="Submit" class="button" required>
+      </form>
+    </div>
+  </body>
+</html>
